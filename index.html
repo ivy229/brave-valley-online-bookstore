@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brave Valley Online Bookstore</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="brand">
+            <h1>Brave Valley</h1>
+            <p>ONLINE BOOKSTORE</p>
+        </div>
+
+        <button class="cart-button" type="button">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+<!-- SHOPPING CART PANEL -->
+<section class="cart-panel" id="cart-panel" hidden>
+
+    <div class="cart-header">
+        <h2>My Shopping Cart</h2>
+
+        <button id="close-cart" type="button">
+            &times;
+        </button>
+    </div>
+
+    <div id="cart-items">
+        <!-- Cart items will appear here -->
+    </div>
+
+    <div class="cart-footer">
+        <h3>
+            Total: KSh <span id="cart-total">0</span>
+        </h3>
+
+        <button id="clear-cart" type="button">
+            Clear Cart
+        </button>
+
+        <button id="checkout-button" type="button">
+            Proceed to Checkout
+        </button>
+    </div>
+
+</section>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#books">Books</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <h2>Discover Your Next Great Read</h2>
+
+            <p>
+                Explore a world of knowledge, imagination
+                and inspiration at Brave Valley.
+            </p>
+
+            <a href="#books" class="shop-button">
+                Explore Books
+            </a>
+        </section>
+
+        <!-- BOOK CATALOGUE -->
+        <section class="catalogue" id="books">
+
+            <h2>Our Book Collection</h2>
+
+            <p class="section-description">
+                Find something interesting to read today.
+            </p>
+
+            <!-- SEARCH -->
+            <div class="search-container">
+                <input
+                    type="search"
+                    id="book-search"
+                    placeholder="Search by book title or author..."
+                >
+
+                <button type="button" id="search-button">
+                    Search
+                </button>
+            </div>
+
+            <!-- CATEGORY FILTERS -->
+            <div class="categories" id="categories">
+
+                <button class="category-btn active"
+                    data-category="all">All Books</button>
+
+                <button class="category-btn"
+                    data-category="fiction">Fiction</button>
+
+                <button class="category-btn"
+                    data-category="technology">Technology</button>
+
+                <button class="category-btn"
+                    data-category="business">Business</button>
+
+                <button class="category-btn"
+                    data-category="education">Education</button>
+
+            </div>
+
+            
+<!-- BOOK GRID -->
+<div class="book-grid" id="book-grid">
+
+    <!-- BOOK 1 -->
+    <article class="book-card" data-category="fiction">
+
+        <div class="book-cover">
+            <img src="images/book%20one.png"
+                 alt="The Great Adventure book cover">
+        </div>
+
+        <div class="book-info">
+            <h3>The Great Adventure</h3>
+            <p>By James Wilson</p>
+            <strong>KSh 850</strong>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+    </article>
+
+    <!-- BOOK 2 -->
+    <article class="book-card" data-category="technology">
+
+        <div class="book-cover">
+            <img src="images/the-digital-world.png"
+                 alt="The Digital World book cover">
+        </div>
+
+        <div class="book-info">
+            <h3>The Digital World</h3>
+            <p>By Sarah Mitchell</p>
+            <strong>KSh 1,200</strong>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+    </article>
+
+    <!-- BOOK 3 -->
+    <article class="book-card" data-category="business">
+
+        <div class="book-cover">
+            <img src="images/the-art-of-success.png"
+                 alt="The Art of Success book cover">
+        </div>
+
+        <div class="book-info">
+            <h3>The Art of Success</h3>
+            <p>By Robert James</p>
+            <strong>KSh 950</strong>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+    </article>
+
+    <!-- BOOK 4 -->
+    <article class="book-card" data-category="education">
+
+        <div class="book-cover">
+            <img src="images/knowledge-and-beyond.png"
+                 alt="Knowledge and Beyond book cover">
+        </div>
+
+        <div class="book-info">
+            <h3>Knowledge and Beyond</h3>
+            <p>By Helen Carter</p>
+            <strong>KSh 700</strong>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+    </article>
+
+    <!-- BOOK 5 -->
+    <article class="book-card" data-category="fiction">
+
+        <div class="book-cover">
+            <img src="images/finding-your-purpose.png"
+                 alt="Finding Your Purpose book cover">
+        </div>
+
+        <div class="book-info">
+            <h3>Finding Your Purpose</h3>
+            <p>By David Morgan</p>
+            <strong>KSh 1,000</strong>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+    </article>
+
+    <!-- BOOK 6 -->
+    <article class="book-card" data-category="fiction">
+
+        <div class="book-cover">
+            <img src="images/the-power-within.png"
+                 alt="The Power Within book cover">
+        </div>
+
+        <div class="book-info">
+            <h3>The Power Within</h3>
+            <p>By Michael Brown</p>
+            <strong>KSh 1,500</strong>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+    </article>
+
+</div>
+
+
+            <p id="no-results" hidden>
+                No books found. Try another search.
+            </p>
+
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <h2>About Brave Valley</h2>
+
+            <p>
+                Brave Valley Online Bookstore is your destination
+                for discovering books, expanding knowledge and
+                exploring new ideas.
+            </p>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@bravevalley.com</p>
+            <p>We would love to hear from you.</p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 Brave Valley Online Bookstore.
+            All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

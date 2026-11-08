@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Confirmation | Brave Valley Online Bookstore</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CONFIRMATION HEADER -->
+    <header class="site-header">
+        <h1>BRAVE VALLEY</h1>
+        <p>ONLINE BOOKSTORE</p>
+    </header>
+
+    <!-- ORDER CONFIRMATION -->
+    <main class="confirmation-container">
+
+        <div class="confirmation-icon">
+            ✓
+        </div>
+
+        <h2>Order Successfully Placed!</h2>
+
+        <p class="confirmation-message">
+            Thank you for shopping with Brave Valley.
+            Your order has been received successfully.
+        </p>
+
+        <!-- CUSTOMER DETAILS -->
+        <section class="confirmation-details">
+            <h3>Order Information</h3>
+
+            <p><strong>Customer:</strong>
+                <span id="confirmed-name"></span>
+            </p>
+
+            <p><strong>Order Number:</strong>
+                <span id="order-number"></span>
+            </p>
+
+            <p><strong>Order Date:</strong>
+                <span id="order-date"></span>
+            </p>
+        </section>
+
+        <!-- ORDERED BOOKS -->
+        <section class="confirmation-summary">
+            <h3>Books Ordered</h3>
+
+            <div id="confirmed-items"></div>
+
+            <h3 class="confirmed-total">
+                Total: KSh <span id="confirmed-total">0</span>
+            </h3>
+        </section>
+
+        <a href="index.html" class="continue-shopping">
+            Continue Shopping
+        </a>
+
+    </main>
+
+    <script src="confirmation.js"></script>
+
+</body>
+</html>

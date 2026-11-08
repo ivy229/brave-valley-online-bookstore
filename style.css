@@ -1,0 +1,1143 @@
+
+/* =================================
+   1. GENERAL WEBSITE SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f0;
+    color: #352b25;
+    line-height: 1.6;
+}
+
+/* =================================
+   2. WEBSITE HEADER
+================================= */
+
+header {
+    background-color: #4b3028;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 15px;
+    color: #eaded2;
+}
+
+/* =================================
+   3. NAVIGATION BAR
+================================= */
+
+nav {
+    background-color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #e5ddd3;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4b3028;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: #b47b50;
+}
+
+/* =================================
+   4. MAIN CONTENT
+================================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #704b38;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+/* =================================
+   5. WEBSITE FOOTER
+================================= */
+
+footer {
+    background-color: #4b3028;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* =================================
+   6. RESPONSIVE DESIGN
+================================= */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 22px 10px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav ul {
+        gap: 12px 18px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+}
+
+/* ==================================
+   1. GENERAL SETTINGS
+================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f5f0;
+    color: #352b25;
+    line-height: 1.6;
+}
+
+/* ==================================
+   2. HEADER
+================================== */
+
+.site-header {
+    background: #4b3028;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.brand p {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #eaded2;
+}
+
+.cart-button {
+    background: #c49a72;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ==================================
+   3. NAVIGATION
+================================== */
+
+.navbar {
+    background: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-bottom: 1px solid #e5ddd3;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #4b3028;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #b47b50;
+}
+
+/* ==================================
+   4. HERO SECTION
+================================== */
+
+.hero {
+    background: #e9ddd0;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #4b3028;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.shop-button {
+    display: inline-block;
+    background: #4b3028;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.shop-button:hover {
+    background: #79513e;
+}
+
+/* ==================================
+   5. CATALOGUE
+================================== */
+
+.catalogue {
+    width: 90%;
+    max-width: 1200px;
+    margin: 45px auto;
+}
+
+.catalogue > h2,
+.about h2,
+.contact h2 {
+    text-align: center;
+    color: #704b38;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* SEARCH BAR */
+
+.search-container {
+    display: flex;
+    max-width: 650px;
+    margin: 0 auto 25px;
+    gap: 8px;
+}
+
+.search-container input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #d8cabe;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search-container button {
+    background: #4b3028;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* CATEGORY FILTERS */
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.category-btn {
+    padding: 9px 18px;
+    background: white;
+    border: 1px solid #cbb8a7;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #4b3028;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background: #4b3028;
+    color: white;
+}
+
+/* ==================================
+   6. BOOK GRID
+================================== */
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.book-card {
+    background: white;
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+/* BOOK COVER DESIGNS */
+
+.book-cover {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #EDE2D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.cover-one {
+    background: #8b493b;
+}
+
+.cover-two {
+    background: #294f60;
+}
+
+.cover-three {
+    background: #4d5036;
+}
+
+.cover-four {
+    background: #a27648;
+}
+
+.cover-five {
+    background: #493e69;
+}
+
+.cover-six {
+    background: #354c43;
+}
+
+/* BOOK DETAILS */
+
+.book-info {
+    padding: 18px;
+    text-align: center;
+}
+
+.book-info h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.book-info p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.book-info strong {
+    display: block;
+    color: #79513e;
+    margin-bottom: 13px;
+    font-size: 17px;
+}
+
+.add-cart {
+    width: 100%;
+    padding: 11px;
+    background: #4b3028;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    background: #9a674c;
+}
+
+/* ==================================
+   7. ABOUT AND CONTACT
+================================== */
+
+.about,
+.contact {
+    background: white;
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 35px;
+    border-radius: 9px;
+    text-align: center;
+}
+
+/* ==================================
+   8. FOOTER
+================================== */
+
+footer {
+    background: #4b3028;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+/* ==================================
+   9. TABLET RESPONSIVENESS
+================================== */
+
+@media screen and (max-width: 900px) {
+
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+}
+
+/* ==================================
+   10. MOBILE RESPONSIVENESS
+================================== */
+
+@media screen and (max-width: 600px) {
+
+    .site-header {
+        padding: 16px 4%;
+    }
+
+    .brand h1 {
+        font-size: 21px;
+    }
+
+    .brand p {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .cart-button {
+        padding: 9px;
+        font-size: 12px;
+    }
+
+    .navbar {
+        gap: 12px 17px;
+        padding: 13px 8px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 45px 15px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .catalogue {
+        width: 94%;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-container button {
+        width: 100%;
+    }
+
+    .categories {
+        gap: 8px;
+    }
+
+    .category-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .book-cover {
+        width: 80%;
+        height: 155px;
+        font-size: 13px;
+    }
+
+    .book-info {
+        padding: 12px 8px;
+    }
+
+    .book-info h3 {
+        font-size: 14px;
+    }
+
+    .book-info p {
+        font-size: 12px;
+    }
+
+    .book-info strong {
+        font-size: 15px;
+    }
+
+    .add-cart {
+        font-size: 12px;
+        padding: 9px 5px;
+    }
+
+    .about,
+    .contact {
+        width: 94%;
+        padding: 22px;
+    }
+
+}
+
+/* ==================================
+   BRAVE VALLEY - ELEGANT THEME
+================================== */
+
+/* Overall website */
+body {
+    background-color: #F8F4EC;
+    color: #3B2A22;
+    font-family: Georgia, serif;
+}
+
+/* Main header */
+.site-header {
+    background-color: #3B2A22;
+    color: #FFFEFB;
+}
+
+.site-header h1 {
+    color: #D8BD8A;
+    letter-spacing: 2px;
+}
+
+.site-header p {
+    color: #F8F4EC;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #FFFEFB;
+}
+
+.navbar a {
+    color: #6B4632;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #B68A4A;
+}
+
+/* Hero section */
+.hero {
+    background-color: #EDE2D2;
+    color: #3B2A22;
+}
+
+.hero h2 {
+    color: #6B4632;
+}
+
+.hero p {
+    color: #5B493D;
+}
+
+/* Section headings */
+.catalogue > h2,
+.about h2,
+.contact h2 {
+    color: #6B4632;
+    font-family: Georgia, serif;
+}
+
+/* Search button */
+#search-button {
+    background-color: #6B4632;
+    color: #FFFEFB;
+    border: 1px solid #B68A4A;
+}
+
+#search-button:hover {
+    background-color: #3B2A22;
+}
+
+/* Category filter buttons */
+.category-btn {
+    background-color: #FFFEFB;
+    color: #6B4632;
+    border: 1px solid #B68A4A;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background-color: #6B4632;
+    color: #FFFEFB;
+}
+
+/* Book cards */
+.book-card {
+    background-color: #FFFEFB;
+    border: 1px solid #E4D5C1;
+}
+
+.book-info h3 {
+    color: #3B2A22;
+}
+
+.book-info p {
+    color: #806B5C;
+}
+
+.book-info strong {
+    color: #B68A4A;
+}
+
+/* Add to cart buttons */
+.add-cart {
+    background-color: #6B4632;
+    color: #FFFEFB;
+    border: none;
+}
+
+.add-cart:hover {
+    background-color: #B68A4A;
+    color: #3B2A22;
+}
+
+/* Shopping cart */
+#cart-button {
+    background-color: #B68A4A;
+    color: #3B2A22;
+}
+
+/* About and contact sections */
+.about,
+.contact {
+    color: #3B2A22;
+}
+
+.about {
+    background-color: #EDE2D2;
+}
+
+.contact {
+    background-color: #FFFEFB;
+}
+
+/* Footer */
+footer {
+    background-color: #3B2A22;
+    color: #F8F4EC;
+}
+
+footer a {
+    color: #D8BD8A;
+}
+
+/* Smooth transitions */
+button,
+.navbar a,
+.book-card {
+    transition: all 0.3s ease;
+}
+
+/* ===== BRAVE VALLEY TYPOGRAPHY ===== */
+
+/* Main website headings */
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+/* Main brand name */
+.site-header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Section headings */
+.catalogue > h2,
+.about h2,
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+/* Hero heading */
+.hero h2 {
+    font-size: 38px;
+    line-height: 1.3;
+}
+
+/* Book titles */
+.book-info h3 {
+    font-size: 19px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+/* General paragraph text */
+p {
+    line-height: 1.7;
+}
+
+
+/* ===== BOOK CARD REFINEMENT ===== */
+
+.book-card {
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(59, 42, 34, 0.08);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(59, 42, 34, 0.15);
+}
+
+.book-info {
+    padding: 12px 5px;
+}
+
+.book-info strong {
+    display: block;
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.add-cart {
+    width: 100%;
+    padding: 11px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ==================================
+   SHOPPING CART DESIGN
+================================== */
+
+.cart-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 380px;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #FFFEFB;
+    z-index: 1000;
+    padding: 25px;
+    box-shadow: -5px 0 20px rgba(59, 42, 34, 0.15);
+    overflow-y: auto;
+}
+
+.cart-panel[hidden] {
+    display: none;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E4D5C1;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.cart-header h2 {
+    color: #6B4632;
+    font-size: 23px;
+}
+
+#close-cart {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #6B4632;
+    cursor: pointer;
+}
+
+#cart-items {
+    margin-bottom: 25px;
+}
+
+.cart-footer {
+    border-top: 1px solid #E4D5C1;
+    padding-top: 20px;
+}
+
+.cart-footer h3 {
+    color: #3B2A22;
+    margin-bottom: 20px;
+}
+
+#clear-cart,
+#checkout-button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#clear-cart {
+    background-color: #EDE2D2;
+    color: #6B4632;
+    border: 1px solid #B68A4A;
+}
+
+#checkout-button {
+    background-color: #6B4632;
+    color: #FFFEFB;
+    border: none;
+}
+
+/* INDIVIDUAL CART ITEMS */
+
+.cart-item {
+    padding: 15px 0;
+    color: #5B493D;
+}
+
+.cart-item h4 {
+    color: #6B4632;
+    margin-bottom: 10px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 12px 0;
+}
+
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    background-color: #EDE2D2;
+    color: #6B4632;
+    border: 1px solid #B68A4A;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.remove-book {
+    background-color: transparent;
+    color: #9B3D32;
+    border: none;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+/* ==================================
+   CHECKOUT PAGE DESIGN
+================================== */
+
+.checkout-container {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.checkout-container > h2 {
+    color: #6B4632;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.checkout-container > p {
+    color: #806B5C;
+    margin-bottom: 30px;
+}
+
+.customer-details {
+    background-color: #FFFEFB;
+    padding: 30px;
+    border: 1px solid #E4D5C1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(59, 42, 34, 0.08);
+}
+
+.customer-details h3 {
+    color: #6B4632;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #3B2A22;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D8BD8A;
+    border-radius: 5px;
+    background-color: #F8F4EC;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid #B68A4A;
+    border-color: #B68A4A;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* RESPONSIVE CHECKOUT */
+
+@media (max-width: 600px) {
+
+    .checkout-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .customer-details {
+        padding: 20px;
+    }
+
+    .checkout-container > h2 {
+        font-size: 25px;
+    }
+
+}
+
+/* ==================================
+   CHECKOUT ORDER SUMMARY
+================================== */
+
+.order-summary {
+    background-color: #FFFEFB;
+    padding: 30px;
+    margin-top: 30px;
+    border: 1px solid #E4D5C1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(59, 42, 34, 0.08);
+}
+
+.order-summary > h3 {
+    color: #6B4632;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #E4D5C1;
+    color: #5B493D;
+}
+
+.checkout-total {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #B68A4A;
+}
+
+.checkout-total h3 {
+    color: #6B4632;
+    text-align: right;
+}
+/* ORDER CONFIRMATION PAGE */
+
+.confirmation-container {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.confirmation-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #EDE2D2;
+    color: #6B4632;
+    font-size: 45px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-container > h2 {
+    color: #6B4632;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.confirmation-message {
+    color: #806B5C;
+    margin-bottom: 30px;
+}
+
+.confirmation-details,
+.confirmation-summary {
+    background-color: #FFFEFB;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #E4D5C1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(59,42,34,.08);
+    text-align: left;
+}
+
+.confirmation-details h3,
+.confirmation-summary h3 {
+    color: #6B4632;
+    margin-bottom: 18px;
+}
+
+.confirmation-details p {
+    margin-bottom: 12px;
+    color: #5B493D;
+}
+
+.confirmed-total {
+    border-top: 2px solid #B68A4A;
+    padding-top: 18px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.continue-shopping {
+    display: inline-block;
+    background-color: #6B4632;
+    color: #FFFEFB;
+    padding: 13px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color .3s ease;
+}
+
+.continue-shopping:hover {
+    background-color: #B68A4A;
+    color: #3B2A22;
+}
+
+@media (max-width: 600px) {
+    .confirmation-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .confirmation-container > h2 {
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Brave Valley Online Bookstore</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CHECKOUT HEADER -->
+    <header class="site-header">
+        <h1>BRAVE VALLEY</h1>
+        <p>ONLINE BOOKSTORE</p>
+    </header>
+
+    
+<!-- CHECKOUT SECTION -->
+<main class="checkout-container">
+
+    <h2>Complete Your Order</h2>
+
+    <p>Thank you for shopping with Brave Valley!</p>
+
+    <!-- CUSTOMER INFORMATION FORM -->
+    <section class="customer-details">
+
+        <h3>Customer Information</h3>
+
+        <form id="checkout-form">
+
+            <div class="form-group">
+                <label for="customer-name">Full Name</label>
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Enter your full name"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="customer-email">Email Address</label>
+                <input
+                    type="email"
+                    id="customer-email"
+                    placeholder="Enter your email address"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="customer-phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="customer-phone"
+                    placeholder="Enter your phone number"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="delivery-location">Delivery Location</label>
+                <textarea
+                    id="delivery-location"
+                    placeholder="Enter your delivery address"
+                    rows="4"
+                    required></textarea>
+            </div>
+<button type="submit" id="place-order">
+    Place Order
+</button>
+        </form>
+
+    </section>
+
+<!-- ORDER SUMMARY -->
+<section class="order-summary">
+
+    <h3>Order Summary</h3>
+
+    <div id="checkout-items">
+        <!-- Selected books will appear here -->
+    </div>
+
+    <div class="checkout-total">
+        <h3>
+            Grand Total: KSh <span id="checkout-total">0</span>
+        </h3>
+    </div>
+
+</section>
+
+</main>
+
+
+
+
+</body>
+<script src="checkout.js"></script>
+
+</html>
